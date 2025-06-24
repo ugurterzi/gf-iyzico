@@ -1,0 +1,840 @@
+# Copyright (C) 2025 Ugur Terzi
+# This file is distributed under the same license as the Gravity Forms Iyzico plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Iyzico 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gravityforms-iyzico\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-06-24T10:50:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: gravityforms-iyzico\n"
+
+#. Plugin Name of the plugin
+#: gravityforms-iyzico.php
+msgid "Gravity Forms Iyzico"
+msgstr ""
+
+#. Description of the plugin
+#: gravityforms-iyzico.php
+msgid "A custom Gravity Forms payment add-on for Iyzico."
+msgstr ""
+
+#. Author of the plugin
+#: gravityforms-iyzico.php
+msgid "Ugur Terzi"
+msgstr ""
+
+#: gravityforms-iyzico.php:33
+msgid "IYZICO: Ana eklenti dosyası yüklendi"
+msgstr ""
+
+#: gravityforms-iyzico.php:38
+msgid "IYZICO: Composer autoloader yüklendi"
+msgstr ""
+
+#: gravityforms-iyzico.php:43
+msgid "IYZICO: Fonksiyon dosyası yüklendi"
+msgstr ""
+
+#: gravityforms-iyzico.php:57
+msgid "IYZICO: Bootstrap load() fonksiyonu çağrıldı"
+msgstr ""
+
+#: gravityforms-iyzico.php:60
+msgid "IYZICO: GFForms ödeme altyapısı bulunamadı"
+msgstr ""
+
+#: gravityforms-iyzico.php:66
+msgid "IYZICO: Sınıf dosyası bulunamadı"
+msgstr ""
+
+#: gravityforms-iyzico.php:71
+msgid "IYZICO: Sınıf dosyası dahil edildi"
+msgstr ""
+
+#: gravityforms-iyzico.php:74
+msgid "IYZICO: GF_Iyzico sınıfı dahil edildikten sonra bulunamadı"
+msgstr ""
+
+#: gravityforms-iyzico.php:79
+msgid "IYZICO: GF_Iyzico, GFAddOn ile kayıt edildi"
+msgstr ""
+
+#: gravityforms-iyzico.php:106
+msgid "Türk Lirası"
+msgstr ""
+
+#: gravityforms-iyzico.php:132
+#: templates/default-state.php:15
+msgid "Ödeme Onayı"
+msgstr ""
+
+#: gravityforms-iyzico.php:133
+#: templates/default-state.php:16
+msgid "Bu sayfa ödeme sonucunu gösterir."
+msgstr ""
+
+#: gravityforms-iyzico.php:192
+msgid "Kayıt bulunamadı."
+msgstr ""
+
+#: gravityforms-iyzico.php:210
+msgid "Geçersiz veya eksik güvenlik anahtarı."
+msgstr ""
+
+#: gravityforms-iyzico.php:240
+msgid "Bu bağlantının süresi dolmuş."
+msgstr ""
+
+#: gravityforms-iyzico.php:254
+msgid "Ödeme bilgisi henüz işlenmemiş."
+msgstr ""
+
+#: gravityforms-iyzico.php:266
+msgid "Ödeme tutarı uyuşmuyor."
+msgstr ""
+
+#: gravityforms-iyzico.php:280
+msgid "Ödeme sistemi yüklenemedi."
+msgstr ""
+
+#: gravityforms-iyzico.php:303
+msgid "Ödendi"
+msgstr ""
+
+#: gravityforms-iyzico.php:304
+msgid "Başarısız"
+msgstr ""
+
+#: gravityforms-iyzico.php:533
+msgid "Ödeme Detaylarını Görüntüle"
+msgstr ""
+
+#: gravityforms-iyzico.php:550
+msgid "Güvenli Ödeme Onay Linki"
+msgstr ""
+
+#: gravityforms-iyzico.php:555
+msgid "Ödeme Onay URL"
+msgstr ""
+
+#: gravityforms-iyzico.php:580
+#, php-format
+msgid "IYZICO: Addon instance available - Slug: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:60
+#, php-format
+msgid "%s Ayarları"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:63
+msgid "Ayarlar başarıyla kaydedildi!"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:82
+#: includes/class-gf-iyzico.php:862
+msgid "Mode"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:86
+#: includes/class-gf-iyzico.php:867
+msgid "Sandbox"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:90
+#: includes/class-gf-iyzico.php:871
+msgid "Production"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:96
+msgid "Yönlendirmeyi Etkinleştir"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:100
+msgid "Evet, formu gönderdikten sonra kullanıcıları Iyzico ödeme ekranına yönlendir."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:122
+msgid "IYZICO: template_redirect eylemi init_frontend() içinde eklendi."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:142
+msgid "IYZICO: Callback parametresi algılandı, process_callback() çağrılıyor."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:157
+msgid "IYZICO CALLBACK: POST verisinde eksik token"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:162
+msgid "IYZICO CALLBACK: Iyzico Token:"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:169
+msgid "IYZICO CALLBACK: Missing entry_id in GET query!"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:170
+msgid "Entry ID not found in callback URL."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:175
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: ID'si %s olan kayıt bulunamadı."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:176
+#, php-format
+msgid "Kayıt bulunamadı. Kayıt ID'si: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:182
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Güvenlik anahtarı uyuşmazlığı. Beklenen: %1$s, Gelen: %2$s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:183
+msgid "Geçersiz güvenlik anahtarı. Erişim reddedildi."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:187
+msgid "IYZICO GERİ ÇAĞIRIM: Güvenlik anahtarı başarıyla doğrulandı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:196
+msgid "Iyzico SDK bulunamadı."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:226
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Kayıt ID: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:227
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Ödeme ID: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:228
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Ödeme Durumu: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:229
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Fiyat: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:230
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Ödenen Fiyat: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:231
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Para Birimi: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:232
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Taksit Sayısı: %s"
+msgstr ""
+
+#. translators: Payment confirmation message with amount, currency, and transaction ID
+#: includes/class-gf-iyzico.php:244
+#, php-format
+msgid "Ödeme onaylandı. Tutar: %1$s %2$s. İşlem kimliği: %3$s"
+msgstr ""
+
+#. translators: Payment failure message with error details
+#: includes/class-gf-iyzico.php:296
+#, php-format
+msgid "Ödeme başarısız: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:302
+#: includes/class-gf-iyzico.php:303
+#: templates/payment-failed.php:48
+msgid "Ödeme Başarısız"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:304
+msgid "Ödeme işlemi tamamlanamadı."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:311
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: Ödeme doğrulama başarısız: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:316
+#: includes/class-gf-iyzico.php:317
+msgid "Ödeme Doğrulanamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:325
+#, php-format
+msgid "IYZICO GERİ ÇAĞIRIM: İstisna: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:330
+#: includes/class-gf-iyzico.php:331
+msgid "Sistem Hatası"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:332
+msgid "Ödeme doğrulanırken bir hata oluştu:"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:348
+#: includes/class-gf-iyzico.php:900
+#: includes/class-gf-iyzico.php:905
+#: includes/class-gf-iyzico.php:947
+msgid "Ad"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:349
+#: includes/class-gf-iyzico.php:905
+msgid "Bu kurulumu benzersiz şekilde tanımlamak için bir feed adı girin."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:360
+#: includes/class-gf-iyzico.php:991
+msgid "Kısa Kod Kullanımı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:363
+msgid "Varsayılan ayarlar"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:366
+msgid "Özelleştirilmiş ayarlar"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:371
+#: includes/class-gf-iyzico.php:428
+#: includes/class-gf-iyzico.php:431
+msgid "Hızlı Referans Tablosunu Göster/Gizle"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:378
+msgid "Seçenek"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:379
+msgid "Varsayılan"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:380
+msgid "Açıklama"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:386
+msgid "E-posta adreslerini maskele"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:390
+msgid "Link süresi (dakika)"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:394
+msgid "Yönlendirme gecikmesi (saniye)"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:398
+msgid "Varsayılan içerik göster"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:402
+msgid "Güvenlik anahtarı gerekli"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:418
+msgid "Örnek:"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:453
+msgid "gün"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:458
+msgid "hafta"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:463
+msgid "ay"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:468
+msgid "yıl"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:484
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Form ID çağrıldı: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:485
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Kayıt ID: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:488
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Yönlendirme ayarı: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:491
+msgid "IYZICO YÖNLENDİRME: Yönlendirme ayarlarıyla devre dışı bırakıldı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:498
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Feed var mı: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:499
+msgid "EVET"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:499
+msgid "HAYIR"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:507
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Bulunan feed sayısı: %d"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:521
+#, php-format
+msgid "IYZICO YÖNLENDİRME: Yönlendirme URL'si: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:528
+msgid "IYZICO YÖNLENDİRME: Uygun Iyzico feedi bulunamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:539
+#, php-format
+msgid "IYZICO: %s form ID için feed bulunamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:550
+#, php-format
+msgid "IYZICO: %s ID'li feed aktif değil"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:560
+#, php-format
+msgid "IYZICO: %s ID'li feed kullanılıyor"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:568
+msgid "IYZICO: Hiçbir feed koşulu karşılanmadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:584
+#, php-format
+msgid "%s(): Ödeme tutarı 0, işlenmiyor."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:634
+#, php-format
+msgid "IYZICO ÖDEME: İstisna oluştu: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:635
+#, php-format
+msgid "IYZICO ÖDEME: Stack trace: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:636
+msgid "Ödeme sistemi hatası: "
+msgstr ""
+
+#: includes/class-gf-iyzico.php:651
+#, php-format
+msgid "IYZICO ÖDEME: %s ID'li kayıt için ödeme başlatıldı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:659
+msgid "Ödeme feedi bulunamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:667
+#, php-format
+msgid "IYZICO ÖDEME: Vendor autoload bulunamadı: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:668
+msgid "Iyzico SDK bulunamadı. Lütfen yönetici ile iletişime geçin."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:675
+#, php-format
+msgid "IYZICO ÖDEME: Mod: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:676
+#, php-format
+msgid "IYZICO ÖDEME: API Anahtarı: %s..."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:696
+#, php-format
+msgid "IYZICO ÖDEME: Güvenlik anahtarlı geri dönüş URL'si: %s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:731
+msgid "Ödeme İşlemi"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:745
+msgid "IYZICO ÖDEME: Ödeme formu başlatılamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:746
+msgid "Ödeme başlatılamadı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:747
+msgid "Ödeme başlatılamadı: "
+msgstr ""
+
+#: includes/class-gf-iyzico.php:773
+#, php-format
+msgid "IYZICO: Müşteri verileri - Ad: %1$s | Soyad: %2$s | Telefon: %3$s | E-posta: %4$s"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:783
+msgid "İsim"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:786
+msgid "Soyisim"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:798
+msgid "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:801
+msgid "Istanbul"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:845
+msgid "Iyzico Ayarları"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:848
+msgid "API Key"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:855
+msgid "Secret Key"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:879
+msgid "Iyzico Ödeme Sayfasına Yönlendirmeyi Etkinleştir"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:884
+msgid "Evet, form gönderildikten sonra kullanıcıları Iyzico ödeme ekranına yönlendir."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:897
+msgid "Iyzico Feed Settings"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:910
+msgid "İşlem Türü"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:914
+msgid "Ürünler ve Hizmetler"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:923
+#: templates/payment-confirmation.php:49
+msgid "Ödeme Tutarı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:933
+#: includes/class-gf-iyzico.php:937
+msgid "Müşteri Bilgileri"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:942
+#: templates/payment-confirmation.php:63
+msgid "E-posta"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:952
+msgid "Soyad"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:957
+msgid "Telefon"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:961
+msgid "Kimlik Numarası"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:965
+msgid "Adres"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:969
+msgid "Şehir"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:973
+msgid "Posta Kodu"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:981
+msgid "Other Settings"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:985
+msgid "Ödemeden Sonra Yönlendirilecek Sayfa"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:988
+msgid "Başarılı ödeme sonrası kullanıcıların yönlendirileceği sayfayı seçin. Lütfen bu sayfaya [iyzico_teyit] kısa kodunu eklemeyi unutmayın."
+msgstr ""
+
+#: includes/class-gf-iyzico.php:1000
+msgid "Koşullu Mantık"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:1002
+msgid "Koşullu Mantığı Etkinleştir"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:1003
+msgid "Bu feed'i işleme al eğer"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:1029
+msgid "Form Toplamı"
+msgstr ""
+
+#: includes/class-gf-iyzico.php:1073
+msgid "Iyzico Eklentisi"
+msgstr ""
+
+#: includes/iyzipay-functions.php:136
+msgid "Fallback: Found email in field 2"
+msgstr ""
+
+#: includes/iyzipay-functions.php:141
+msgid "Fallback: Found firstName in field 1.3"
+msgstr ""
+
+#: includes/iyzipay-functions.php:146
+msgid "Fallback: Found lastName in field 1.6"
+msgstr ""
+
+#: includes/iyzipay-functions.php:151
+msgid "Fallback: Found phone in field 6"
+msgstr ""
+
+#: includes/iyzipay-functions.php:177
+msgid "No valid entry_id found in request"
+msgstr ""
+
+#: includes/iyzipay-functions.php:215
+#, php-format
+msgid "Phone number format not recognized: %s, using default"
+msgstr ""
+
+#: includes/iyzipay-functions.php:227
+#, php-format
+msgid "Invalid email provided: %s, using default"
+msgstr ""
+
+#: templates/default-state.php:33
+msgid "Ödeme işleminizi tamamladıysanız, e-posta adresinize gönderilen onay linkini kullanarak bu sayfaya erişebilirsiniz."
+msgstr ""
+
+#: templates/default-state.php:37
+msgid "Yardıma mı ihtiyacınız var?"
+msgstr ""
+
+#: templates/default-state.php:39
+msgid "Ödeme ile ilgili sorularınız için site yöneticisi ile iletişime geçebilirsiniz."
+msgstr ""
+
+#: templates/default-state.php:43
+#: templates/error.php:55
+#: templates/payment-failed.php:79
+msgid "Ana sayfaya geri dön"
+msgstr ""
+
+#: templates/default-state.php:48
+#: templates/error.php:60
+#: templates/payment-confirmation.php:78
+#: templates/payment-failed.php:84
+msgid "Ana Sayfaya Dön"
+msgstr ""
+
+#: templates/error.php:14
+msgid "Bir hata oluştu. Lütfen tekrar deneyin."
+msgstr ""
+
+#: templates/error.php:20
+msgid "Hata simgesi"
+msgstr ""
+
+#: templates/error.php:28
+msgid "Hata"
+msgstr ""
+
+#: templates/error.php:32
+msgid "Sorun devam ediyor mu?"
+msgstr ""
+
+#: templates/error.php:34
+msgid "Sayfayı yenilemeyi deneyin"
+msgstr ""
+
+#: templates/error.php:35
+msgid "İnternet bağlantınızı kontrol edin"
+msgstr ""
+
+#: templates/error.php:39
+#, php-format
+msgid "Sorun devam ederse %s ile iletişime geçin"
+msgstr ""
+
+#: templates/error.php:40
+msgid "destek ekibimiz"
+msgstr ""
+
+#: templates/error.php:53
+#: templates/payment-failed.php:77
+msgid "Tekrar Dene"
+msgstr ""
+
+#: templates/payment-confirmation.php:21
+#: templates/payment-failed.php:23
+msgid "Değerli Müşteri"
+msgstr ""
+
+#: templates/payment-confirmation.php:22
+#: templates/payment-confirmation.php:23
+#: templates/payment-confirmation.php:24
+#: templates/payment-confirmation.php:25
+#: templates/payment-failed.php:27
+#: templates/payment-failed.php:31
+msgid "Belirtilmemiş"
+msgstr ""
+
+#: templates/payment-confirmation.php:26
+msgid "Başarılı"
+msgstr ""
+
+#: templates/payment-confirmation.php:43
+msgid "Ödeme Başarılı!"
+msgstr ""
+
+#: templates/payment-confirmation.php:45
+msgid "Teşekkürler"
+msgstr ""
+
+#: templates/payment-confirmation.php:55
+msgid "İşlem No"
+msgstr ""
+
+#: templates/payment-confirmation.php:59
+msgid "Tarih"
+msgstr ""
+
+#: templates/payment-confirmation.php:67
+msgid "Durum"
+msgstr ""
+
+#: templates/payment-confirmation.php:80
+msgid "Ödeme onayını yazdır"
+msgstr ""
+
+#: templates/payment-confirmation.php:86
+msgid "Yazdır"
+msgstr ""
+
+#: templates/payment-failed.php:41
+msgid "Başarısız ödeme simgesi"
+msgstr ""
+
+#: templates/payment-failed.php:50
+msgid "Üzgünüz"
+msgstr ""
+
+#: templates/payment-failed.php:50
+msgid "ödemeniz tamamlanamadı."
+msgstr ""
+
+#: templates/payment-failed.php:55
+msgid "Tutar:"
+msgstr ""
+
+#: templates/payment-failed.php:57
+msgid "İşlem No:"
+msgstr ""
+
+#: templates/payment-failed.php:58
+msgid "Tarih:"
+msgstr ""
+
+#: templates/payment-failed.php:62
+msgid "Ne yapabilirsiniz?"
+msgstr ""
+
+#: templates/payment-failed.php:64
+msgid "Kart bilgilerinizi kontrol ederek tekrar deneyin"
+msgstr ""
+
+#: templates/payment-failed.php:65
+msgid "Farklı bir ödeme yöntemi kullanın"
+msgstr ""
+
+#: templates/payment-failed.php:66
+msgid "Bankanızla iletişime geçin"
+msgstr ""
+
+#: templates/payment-failed.php:67
+msgid "Sorun devam ederse site yöneticisi ile iletişime geçin"
+msgstr ""
+
+#: templates/redirect-home.php:21
+msgid "Yönlendirme simgesi"
+msgstr ""
+
+#: templates/redirect-home.php:28
+msgid "Yönlendiriliyorsunuz..."
+msgstr ""
+
+#: templates/redirect-home.php:31
+msgid "Bu sayfa zaten görüntülendi. Güvenlik nedeniyle ödeme onay sayfaları yalnızca bir kez görüntülenebilir."
+msgstr ""
+
+#: templates/redirect-home.php:36
+msgid "saniye içinde ana sayfaya yönlendirileceksiniz."
+msgstr ""
+
+#: templates/redirect-home.php:41
+msgid "Ana sayfaya git"
+msgstr ""
+
+#: templates/redirect-home.php:46
+msgid "Hemen Git"
+msgstr ""

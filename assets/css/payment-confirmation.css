@@ -1,0 +1,445 @@
+/* Compact Receipt-Style Payment Confirmation */
+:root {
+  --primary-color: #10B981;
+  --primary-light: #D1FAE5;
+  --error-color: #EF4444;
+  --error-light: #FEE2E2;
+  --warning-color: #F59E0B;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --background: #FFFFFF;
+  --surface: #F9FAFB;
+  --border: #E5E7EB;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Base layout - more compact */
+.iyzico-confirmation-wrapper,
+.iyzico-error-wrapper,
+.iyzico-failed-wrapper,
+.iyzico-default-wrapper,
+.iyzico-redirect-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+  font-family: var(--font-sans);
+  background: #f8fafc;
+}
+
+/* Compact receipt-style card */
+.iyzico-confirmation-card,
+.iyzico-error-card,
+.iyzico-failed-card,
+.iyzico-default-card,
+.iyzico-redirect-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle top border instead of thick gradient */
+.iyzico-confirmation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 12px 12px 0 0;
+}
+
+.iyzico-error-card::before,
+.iyzico-failed-card::before {
+  background: var(--error-color);
+}
+
+/* Smaller, cleaner icons */
+.iyzico-success-icon,
+.iyzico-error-icon,
+.iyzico-failed-icon,
+.iyzico-default-icon,
+.iyzico-redirect-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  animation: scale 0.3s ease-out;
+}
+
+@keyframes scale {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+.iyzico-success-icon {
+  background: var(--primary-color);
+}
+
+.iyzico-error-icon,
+.iyzico-failed-icon {
+  background: var(--error-color);
+}
+
+.iyzico-default-icon,
+.iyzico-redirect-icon {
+  background: var(--text-muted);
+}
+
+.iyzico-success-icon svg,
+.iyzico-error-icon svg,
+.iyzico-failed-icon svg,
+.iyzico-default-icon svg,
+.iyzico-redirect-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+/* Compact typography */
+.iyzico-confirmation-title,
+.iyzico-error-title,
+.iyzico-failed-title,
+.iyzico-default-title,
+.iyzico-redirect-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.iyzico-confirmation-subtitle,
+.iyzico-failed-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
+  line-height: 1.4;
+}
+
+.iyzico-error-message,
+.iyzico-default-message,
+.iyzico-redirect-message {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
+  line-height: 1.4;
+}
+
+.iyzico-customer-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Receipt-style amount display */
+.iyzico-amount-display {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.iyzico-amount-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.iyzico-amount-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+/* Compact details as simple list */
+.iyzico-details-grid {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+}
+
+.iyzico-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+}
+
+.iyzico-detail-item:last-child {
+  border-bottom: none;
+}
+
+.iyzico-detail-item:nth-child(even) {
+  background: var(--surface);
+}
+
+.iyzico-detail-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin: 0;
+}
+
+.iyzico-detail-value {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  text-align: right;
+  font-family: 'Courier New', monospace;
+}
+
+/* Compact info sections */
+.iyzico-default-info,
+.iyzico-failed-details,
+.iyzico-failed-help,
+.iyzico-default-help,
+.iyzico-redirect-info,
+.iyzico-error-help {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+.iyzico-help-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.iyzico-failed-help ul,
+.iyzico-error-help ul,
+.iyzico-help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.iyzico-failed-help li,
+.iyzico-error-help li,
+.iyzico-help-list li {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.iyzico-failed-help li::before,
+.iyzico-error-help li::before,
+.iyzico-help-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.iyzico-help-text {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Compact countdown */
+.iyzico-countdown-container {
+  background: #FEF3C7;
+  border: 1px solid #FDE68A;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.iyzico-countdown-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+#iyzico-countdown {
+  font-weight: 700;
+  color: #D97706;
+  font-size: 1.125rem;
+  font-family: 'Courier New', monospace;
+}
+
+/* Compact button styling */
+.iyzico-actions,
+.iyzico-failed-actions,
+.iyzico-error-actions,
+.iyzico-redirect-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.iyzico-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.iyzico-btn-primary {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.iyzico-btn-primary:hover {
+  background: #059669;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.iyzico-btn-secondary {
+  background: var(--background);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+.iyzico-btn-secondary:hover {
+  background: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+}
+
+.iyzico-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Subtle animations */
+.iyzico-redirect-icon svg {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .iyzico-confirmation-card,
+  .iyzico-error-card,
+  .iyzico-failed-card,
+  .iyzico-default-card,
+  .iyzico-redirect-card {
+    padding: 1.25rem;
+    margin: 0.75rem;
+  }
+
+  .iyzico-amount-value {
+    font-size: 1.5rem;
+  }
+
+  .iyzico-actions,
+  .iyzico-failed-actions,
+  .iyzico-error-actions,
+  .iyzico-redirect-actions {
+    flex-direction: column;
+  }
+
+  .iyzico-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .iyzico-detail-item {
+    padding: 0.625rem 0.75rem;
+  }
+
+  .iyzico-detail-label,
+  .iyzico-detail-value {
+    font-size: 0.75rem;
+  }
+}
+
+/* Print optimization */
+@media print {
+  .iyzico-actions,
+  .iyzico-failed-actions,
+  .iyzico-error-actions,
+  .iyzico-redirect-actions {
+    display: none !important;
+  }
+
+  .iyzico-confirmation-card,
+  .iyzico-error-card,
+  .iyzico-failed-card {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    max-width: none !important;
+  }
+
+  body {
+    background: white !important;
+  }
+}
+
+/* Accessibility */
+.iyzico-btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

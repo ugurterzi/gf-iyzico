@@ -1,0 +1,12 @@
+{
+  "name": "yourname/gravityforms-iyzico",
+  "description": "Gravity Forms Iyzico Payment Gateway",
+  "require": {
+    "iyzico/iyzipay-php": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Iyzipay\\": "vendor/iyzipay/iyzipay-php/src/Iyzipay/"
+    }
+  }
+}
